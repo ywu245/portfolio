@@ -281,6 +281,7 @@ section {
 .about-containers,
 .about-details-container {
   display: flex;
+  /* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); */
 }
 
 .about-pic {
@@ -315,7 +316,16 @@ section {
 }
 
 .text-container p {
-    margin-bottom: 1rem;
+    margin-bottom: 8px;
+}
+
+.text-container ul {
+    list-style: disc;
+    margin-left: 2rem;
+    text-align: left;
+    color: rgb(85, 85, 85);
+    margin-top: 6px;
+    margin-bottom: 10px;
 }
 
 /* EXPERIENCE SECTION */
@@ -367,6 +377,9 @@ article .icon {
 .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
 }
 
 .project-img {
@@ -383,7 +396,7 @@ article .icon {
 
 .project-title {
   margin: 1rem;
-  color: black;
+  text-align: center;
 }
 
 .project-btn {
